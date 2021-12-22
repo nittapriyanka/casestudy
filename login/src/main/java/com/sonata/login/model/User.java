@@ -6,87 +6,90 @@ import java.sql.Timestamp;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+import org.springframework.stereotype.Component;
+
 @XmlRootElement
+@Component
 public class User {
 	
-	private int User_ID;
-	private String Username;
-	private String Email;
-	private String First_Name;
-	private String Last_Name;
-	private long Contact_Number;
-	private String Role;
-	private boolean IsActive;
-	private Date DOB;
-	private Timestamp CreatedOn;
-	private String Password;
+	private int user_ID;
+	private String username;
+	private String email;
+	private String first_Name;
+	private String last_Name;
+	private long contact_Number;
+	private String role;
+	private boolean isActive;
+	private Date dOB;
+	private Timestamp createdOn;
+	private String password;
 	public int getUser_ID() {
-		return User_ID;
+		return user_ID;
 	}
 	public void setUser_ID(int user_ID) {
-		User_ID = user_ID;
+		this.user_ID = user_ID;
 	}
 	public String getUsername() {
-		return Username;
+		return username;
 	}
 	public void setUsername(String username) {
-		Username = username;
+		this.username = username;
 	}
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 	public String getFirst_Name() {
-		return First_Name;
+		return first_Name;
 	}
 	public void setFirst_Name(String first_Name) {
-		First_Name = first_Name;
+		this.first_Name = first_Name;
 	}
 	public String getLast_Name() {
-		return Last_Name;
+		return last_Name;
 	}
 	public void setLast_Name(String last_Name) {
-		Last_Name = last_Name;
+		this.last_Name = last_Name;
 	}
 	public long getContact_Number() {
-		return Contact_Number;
+		return contact_Number;
 	}
 	public void setContact_Number(long contact_Number) {
-		Contact_Number = contact_Number;
+		this.contact_Number = contact_Number;
 	}
 	public String getRole() {
-		return Role;
+		return role;
 	}
 	public void setRole(String role) {
-		Role = role;
+		this.role = role;
 	}
-	public boolean isIsActive() {
-		return IsActive;
+	public boolean isActive() {
+		return isActive;
 	}
-	public void setIsActive(boolean isActive) {
-		IsActive = isActive;
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
 	}
-	public Date getDOB() {
-		return DOB;
+	public Date getdOB() {
+		return dOB;
 	}
-	public void setDOB(Date dOB) {
-		DOB = dOB;
+	public void setdOB(Date dOB) {
+		this.dOB = dOB;
 	}
 	public Timestamp getCreatedOn() {
-		return CreatedOn;
+		return createdOn;
 	}
 	public void setCreatedOn(Timestamp createdOn) {
-		CreatedOn = createdOn;
+		this.createdOn = createdOn;
 	}
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
-	
+
 	
 	
 	
