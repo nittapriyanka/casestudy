@@ -1,0 +1,30 @@
+Data BaseCommands:
+create database casestudy
+create table user(User_ID INT(11) NOT NULL,Username varchar(15),Email varchar(30),First_Name varchar(15),Last_Name varchar(10),Contact_Number bigint(20),Role varchar(10),IsActive tinyint(1),DOB date,Created_On datetime,Password varchar(20),Primary key(User_ID));
+insert into user values(21,sushma,sush@gmail.com,Sushma,Sh,7809675432,admin,yes,1999-11-13,2021-12-06,abc);
+create table task(Task_ID int not null,Owner_ID int not null,Creator_ID int not null,Name varchar(20),Description varchar(50),Status varchar(15),Priority varchar(15),Notes varchar(75),IsBookmarked boolean,Created_On datetime,Status_Changed_On datetime,primary key(Task_ID),constraint FK_TaskOwner Foreign key(Owner_ID) Refrences user(User_ID),constraint FK_TaskCreator Foriegn key(Creator_ID) Refrences user(User_ID));
+insert into taskvalues(111,21,21,login,AboutProject,InProgress,high,webapi,true,2021-12-13,2021-12-15);
+create table notification(Notification_ID int not null,Task_Owner_ID int not null,Status varchar(15),Created_On datetime,Status_Changed_On datetime,Primary key(Notification_ID),Constraint FK_Taskid Foriegn key(Task_ID) Refreences task(Task_ID),Constraint FK_ownerid Foriegn key(Task_Owner_ID) Refrences user(User_ID));
+
+select * from user;
+select * from task;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
