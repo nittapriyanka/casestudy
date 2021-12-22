@@ -1,0 +1,68 @@
+<!--<p>update-task works!</p>-->
+<header class="header">
+<h3>Update Task</h3>
+</header>
+
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <table>
+    <div class="form-group">
+      <label for="name">Owner_ID</label>
+      <input type="text" class="form-control" id="owner_ID" required [(ngModel)]="task.owner_ID" name="owner_ID">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Creator_ID</label>
+      <input type="text" class="form-control" id="creator_ID" required [(ngModel)]="task.creator_ID" name="creator_ID">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="task.name" name="name">
+      </div>
+
+    <div class="form-group">
+        <label for="name">Description</label>
+        <input type="text" class="form-control" id="description" required [(ngModel)]="task.description" name="description">
+      </div>
+      
+    <div class="form-group">
+        <label for="name">Status</label>
+        <input type="text" class="form-control" id="status" required [(ngModel)]="task.status" name="status">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Priority</label>
+        <input type="text" class="form-control" id="priority" required [(ngModel)]="task.priority" name="priority">
+      </div>
+      
+      <div class="form-group">
+        <label for="name">Notes</label>
+        <input type="text" class="form-control" id="notes" required [(ngModel)]="task.notes" name="notes">
+      </div>
+
+
+      <div class="form-group">
+        <label for="name">IsBookmarked</label>
+        <input type="text" class="form-control" id="isBookmarked" required [(ngModel)]="task.isBookmarked" name="isBookmarked">
+      </div>
+
+
+      <div class="form-group">
+        <label for="name">Created_On</label>
+        <input type="datetime-local" class="form-control" id="created_On" required [(ngModel)]="task.created_On" name="created_On">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Status_Changed_On</label>
+        <input type="datetime-local" class="form-control" id="status_Changed_On" required [(ngModel)]="task.status_Changed_On" name="status_Changed_On">
+      </div>
+
+
+     
+    <button type="submit" class="btn btn-success">Submit</button>
+    </table>
+  </form>
+</div>
+
+

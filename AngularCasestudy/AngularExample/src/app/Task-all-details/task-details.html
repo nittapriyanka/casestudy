@@ -1,0 +1,12 @@
+<p>tasks</p>
+
+<div>
+    <h1>tasks</h1>
+    <ul *ngFor= "let  task of tasks">
+        <li>
+            {{task.task_ID}}-{{task.owner_ID}}-{{task.name}}-{{task.description}}-{{task.status}}-{{task.priority}}-{{task.notes}}-{{task.isBookmarked}}-{{task.created_On}}-{{task.status_Changed_On}}
+              
+
+        </li>
+    </ul>
+</div>

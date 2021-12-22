@@ -1,0 +1,58 @@
+<div>
+    <form #userForm1="ngForm" (ngSubmit)="onSubmit(userForm1.value)">
+        <table>
+              
+        <label>Task_ID:</label>    
+        <input type ="text" name="task_ID" placeholder="task_id" ngModel >
+        <br><br>
+
+        <label>Owner_ID:</label>              
+        <input type ="text" name="owner_ID" placeholder="owner_id" ngModel >
+        <br><br>
+
+
+        <label>Creator_ID:</label>
+        <input type ="text" name="creator_ID" placeholder="creator_id" ngModel >
+        <br><br>
+
+         <label>Name:</label>
+        <input type ="text" name="name" placeholder="name" ngModel >
+        <br><br>
+
+        <label>Description:</label>
+        <input type ="text" name="description" placeholder="description" ngModel >
+        <br><br>
+
+        <label>Status:</label>
+        <input type ="text" name="status" placeholder="status" ngModel >
+        <br><br>
+
+        <label>Priority:</label>
+        <input type ="text" name="priority" placeholder="priority" ngModel>
+        <br><br>
+
+        <label>Notes:</label>
+        <input type ="text" name="notes" placeholder="notes" ngModel>
+        <br><br>
+
+        <label>IsBookmarked:</label>
+        <input type ="text" name="isBookmarked" placeholder="Isbookmarked" ngModel >
+        <br><br>
+
+        <label>Created_On:</label>
+        <input type ="date" name="created_On" placeholder="created_on" ngModel >
+        <br><br>
+        
+        <label>Status_Changed_On:</label>
+        <input type ="date" name="status_Changed_On" placeholder="status_changed_on" ngModel >
+        <br><br>
+
+        <button type="text" value="submit">submit</button>
+    <br>
+    
+
+    
+        </table>
+
+    </form>
+</div>

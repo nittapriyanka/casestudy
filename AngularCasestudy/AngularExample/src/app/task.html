@@ -1,0 +1,78 @@
+<div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+        <table>
+              
+        <label>Task_ID:</label>    
+        <input type ="text" name="Task_ID" placeholder="task_id" formControlName="Task_ID"  >
+        <br><br>
+
+        <label>Owner_ID:</label>              
+        <input type ="text" name="Owner_ID" placeholder="owner_id" formControlName="Owner_ID" >
+        <br><br>
+
+
+        <label>Creator_ID:</label>
+        <input type ="text" name="Creator_ID" placeholder="creator_id" formControlName="Creator_ID" >
+        <br><br>
+
+         <label>Name:</label>
+        <input type ="text" name="Name" placeholder="name" formControlName="Name" >
+        <br><br>
+
+        <label>Description:</label>
+        <input type ="text" name="Description" placeholder="description" formControlName="Description" >
+        <br><br>
+
+        <label>Status:</label>
+        <input type ="text" name="Status" placeholder="status" formControlName="Status" >
+        <br><br>
+
+        <label>Priority:</label>
+        <input type ="text" name="Priority" placeholder="priority" formControlName="Priority" >
+        <br><br>
+
+        <label>Notes:</label>
+        <input type ="text" name="Notes" placeholder="notes" formControlName="Notes" >
+        <br><br>
+
+        <label>IsBookmarked:</label>
+        <input type ="text" name="IsBookmarked" placeholder="Isbookmarked" formControlName="IsBookmarked" >
+        <br><br>
+
+        <label>Created_On:</label>
+        <input type ="date" name="Created_On" placeholder="created_on" formControlName="Created_On" >
+        <br><br>
+        
+        <label>Status_Changed_On:</label>
+        <input type ="date" name="Status_Changed_On" placeholder="status_changed_on" formControlName="Status_Changed_On" >
+        <br><br>
+
+        <button type="text" value="submit">submit</button>
+    <br>
+    taskid is {{taskid}}
+    <br>
+    ownerid is {{owner_id}}
+    <br>
+    creatorid is {{creator_id}}
+    <br>
+    task name is {{name}}
+    <br>
+    description is {{description}}
+    <br>
+    status is {{status}}
+    <br>
+    priority is {{priority}}
+    <br>
+    notes is {{notes}}
+    <br>
+    IsBookmarked is {{isbook}}
+    <br>
+    Created_On is {{createdon}}
+    <br>
+    Status_Changed_On is {{statuschangedon}}
+
+    
+        </table>
+
+    </form>
+</div>

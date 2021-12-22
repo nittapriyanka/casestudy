@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul>
+    <li class="nav-item">
+      <a routerLink="/tasks" class="btn btn-success mx-2" routerLinkActive="active">Task List</a>
+  </li>
+  </ul>
+</nav>
+
+<div class="box-container">
+  <table class="elementsContainer">
+   
+    <tr>
+
+    <td>
+    <input type="text" class="form-control" placeholder="status" [(ngModel)]="status">
+    </td>
+    <div class="input-group-append">
+      <td>
+        <button class="btn btn-primary" type="button" (click)="searchTask()">
+            <i class="material-icons">search</i>
+        </button>
+        
+      </td>
+    </div>
+    </tr>
+  </table>
+   
+</div>
+
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Task_ID</th>
+                <th>Owner_ID</th>
+                <th>Creator_ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Priority</th>
+                <th>Notes</th>
+                <th>IsBookmarked</th>
+                <th>Created_On</th>
+                <th>Status_Changed_On</th>
+                
+    
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let tro of tasks">
+               <td>{{tro.task_ID}}</td>
+               <td>{{tro.owner_ID}}</td>
+               <td>{{tro.creator_ID}}</td>
+               <td>{{tro.name}}</td>
+               <td>{{tro.description}}</td>
+               <td>{{tro.status}}</td>
+               <td>{{tro.priority}}</td>
+               <td>{{tro.notes}}</td>
+               <td>{{tro.isBookmarked}}</td>
+               <td>{{tro.created_On}}</td>
+               <td>{{tro.status_Changed_On}}</td>
+               </tr>
+               </tbody>
+               </table>
+               </div>
+               </div>
+
+              
+    
+

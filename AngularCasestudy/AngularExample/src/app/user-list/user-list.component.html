@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="/home" class="nav-link" routerLinkActive="active">Home</a>
+  </li>
+  </ul>
+</nav>
+<div class="panel panel-primary">
+    
+  
+  <div class="panel-heading">
+      <h2>User List</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>User_ID</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>First_Name</th>
+              <th>Last_Name</th>
+              <th>Contact_Number</th>
+              <th>Role</th>
+              <th>IsActive</th>
+              <th>DOB</th>
+              <th>CreatedOn</th>
+              <th>Password</th>
+              
+  
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let uro of user | async">
+             <td>{{uro.user_ID}}</td>
+             <td>{{uro.username}}</td>
+             <td>{{uro.email}}</td>
+             <td>{{uro.first_Name}}</td>
+             <td>{{uro.last_Name}}</td>
+             <td>{{uro.contact_Number}}</td>
+             <td>{{uro.role}}</td>
+             <td>{{uro.active}}</td>
+             <td>{{uro.dOB}}</td>
+             <td>{{uro.createdOn}}</td>
+             <td>{{uro.password}}</td>
+
+
+             <td><button (click)="deleteUser(uro.user_ID)" class="btn btn-danger">Delete</button>
+                <button (click) ="updateuser(uro.user_ID)" class ="btn btn-info" style="margin-left: 10px;">Update</button>
+                <button (click)="userdetail(uro.user_ID)" class="btn btn-info" style="margin-left: 10px">Details</button>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+    </div>
+

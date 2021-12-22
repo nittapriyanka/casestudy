@@ -1,0 +1,30 @@
+.card{
+    border:none;
+    width:500px;
+    padding:40px;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgb(7, 40, 41);
+
+}
+
+.card h1
+{
+    color: #fff;
+}
+
+label{
+    color: #fff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 70px;
+    background-color: cadetblue;
+   
+    color: white;
+}
